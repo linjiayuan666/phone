@@ -1,0 +1,59 @@
+/* 头部 */
+.header{
+    width: 100%;
+    background: #dd7d5e;
+    /*粘性定位 当在最顶端的时候 跟正常头部一样
+    当滚动条滚动之后，变成固定定位一样*/
+    position: sticky;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:10;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        .menu{
+            font-size: 2.5em;
+            color: #fff ;
+            margin-left: 5px;
+            margin-top: 4px;
+            line-height: 16px;
+        }
+        .menu,.logo{
+            margin-right: 30%;
+        }
+    }
+} 
+
+/* footer */
+.footer{
+    width: 100%;
+    background: #696056;
+    position: sticky;
+    left:0;
+    bottom:0;
+    z-index:10;
+    .container{
+        .box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 20%;
+                margin: 0 auto;
+                text-align: center;
+                a{
+                    color: #968f88;
+                    height: 2em;
+                    line-height: 2em;
+                    font-size: 2em;
+                    transition: all linear .3s;
+                }
+                .checked{
+                    color: #dd7d5e;
+                }
+            }
+        }
+    }
+} 

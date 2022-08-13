@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击login即可进入下个页面</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- 引入animate.css 动画效果 -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- 公共样式 引入的是一个 less文件 -->
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+
+    <!-- 首页样式 -->
+    <link rel="stylesheet/less" href="./assets/css/index.less" />
+
+</head>
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="top">
+                <div class="pic"><img  class=" wow rubberBand" data-wow-delay="100ms" src="./assets/image/logo.png"></div>
+                <div class="test">
+                    <div class="int1 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="glyphicon glyphicon-envelope"></div><input  type="text" placeholder="E-mail">
+                    </div>
+                    <div class="int2 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="glyphicon glyphicon-lock"></div>
+                        <input  type="password" placeholder="Password">
+                    </div>
+                    
+                </div>
+                
+                <button class="btn wow rubberBand" data-wow-delay="500ms">
+                    <a href="./phone2/index2.html">Login</a>
+                </button>
+                
+                
+                <p class="forgot wow fadeInUp" data-wow-delay="500ms">Forgot password?</p>
+            </div>
+            <div class="bottom">
+                <div class="facebook wow fadeInUp" data-wow-delay="600ms">
+                    <div  class="glyphicon glyphicon-menu-right"></div><a href="">Login with Facebook</a>
+                </div>
+                <p class="freebee wow fadeInUp" data-wow-delay="700ms">Sign Up for Freebee</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<!-- 引入jquery -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- 引入bootstrap js  -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- 引入less -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- 引入懒加载插件 -->
+<script src="./assets/js/wow.min.js"></script>
+
+<!-- 滚动视觉差插 -->
+<script src="./assets/js/parallax.min.js"></script>
+
+<!-- 制作懒加载效果 -->
+<script>
+  // 实例化懒加载动画效果
+  new WOW().init();
+</script>
